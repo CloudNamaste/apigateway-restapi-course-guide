@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import {Button,  TextField, Grid, Paper, makeStyles} from '@material-ui/core';
 import axios from 'axios';
 
-const URL = "https://caql0svf3a.execute-api.ap-southeast-2.amazonaws.com/dev/subscriber";
+const URL = "https://{API_ID}.execute-api.{REGION}.amazonaws.com/{STAGE}/subscriber";
 
 /************************************************************
  * STYLES
