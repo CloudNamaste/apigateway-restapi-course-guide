@@ -51,7 +51,7 @@
 "course" : "$inputRoot.course",
 "operation" : "$input.params('operation')"
 }
-
+```
 
 # DELETE REQUEST
 ```
@@ -60,5 +60,4 @@
 "course" : "$input.params('course')",
 "operation" : "$input.params('operation')"
 }
-
 ```
