@@ -33,7 +33,7 @@ def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     
     try:
-        table = dynamodb.Table('subscriber')
+        table = dynamodb.Table('subscribers')
         
         if operation == 'scan':
             print('List subscribers....')
