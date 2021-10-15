@@ -173,7 +173,7 @@ export default function CustomizedAccordions() {
 
   const onCreateSubscriberFormSubmitHandler = (event) => {
     event.preventDefault();
-    console.log("hello")
+
     const NEW_URL = URL +  "?operation=add";
 
     axios.post(NEW_URL,detailsForPostAPICall)
