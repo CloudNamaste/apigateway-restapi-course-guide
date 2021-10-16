@@ -4,11 +4,13 @@
 ## PRE Requisites
 1. Install Git in your machine 
 
-MAC     : https://git-scm.com/download/mac
-WINDOWS : https://git-scm.com/download/win
-LINUX   : https://git-scm.com/download/win
+  MAC     : https://git-scm.com/download/mac
 
-2. Install NodJS and npm in your system
+  WINDOWS : https://git-scm.com/download/win
+
+  LINUX   : https://git-scm.com/download/win
+
+2. Install NodeJS and npm in your system
 
 https://nodejs.org/en/download/
 
