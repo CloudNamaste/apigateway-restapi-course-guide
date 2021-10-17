@@ -64,6 +64,9 @@ def lambda_handler(event, context):
     except:
         raise
     
+    # Lambda Proxy Integration expects the output to be returned in a specific format
+    # https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-output-format
+    
     final_response = {
         'statusCode' : 200,
         'body': json.dumps(response),
