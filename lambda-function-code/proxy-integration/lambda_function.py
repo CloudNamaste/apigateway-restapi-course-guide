@@ -5,7 +5,9 @@ import boto3
 def lambda_handler(event, context):
     print(event)
     operation = event["queryStringParameters"]["operation"]
-    body = json.loads( event["body"])
+    
+    if event["body"]:
+        body = json.loads(event["body"])
     
     dynamodb = boto3.resource('dynamodb')
     
