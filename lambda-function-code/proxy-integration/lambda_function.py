@@ -68,8 +68,8 @@ def lambda_handler(event, context):
         'statusCode' : 200,
         'body': json.dumps(response),
         'headers' : {
-            'Access-Control-Allow-Origin' :'*',
-            'Access-Control-Allow-Method' :'GET,PUT,POST,DELETE,OPTIONS'
+            #'Access-Control-Allow-Origin' :'*',
+            #'Access-Control-Allow-Method' :'GET,PUT,POST,DELETE,OPTIONS'
         }
     }
     print(final_response)
