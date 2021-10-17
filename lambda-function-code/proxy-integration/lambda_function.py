@@ -49,7 +49,7 @@ def lambda_handler(event, context):
                 },
                 UpdateExpression = 'set address = :val1',
                 ExpressionAttributeValues = {
-                    ':val1': address
+                    ':val1': body["address"]
                 },
                 ReturnValues = 'ALL_NEW'
             )
