@@ -1,5 +1,3 @@
-var xml = require("xml");
-
 var routes = function(app) {
 
   app.get("/", function(req, res) {
