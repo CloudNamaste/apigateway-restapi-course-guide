@@ -8,13 +8,14 @@ var routes = function(app) {
 
   //get request
   app.get("/echo", function(req, res) {
-    console.log(req["route"]);
+    console.log(req);
     let response = new Object();;
     response["response"] = "GET request!";
     response["headers"] = req.headers
     response["path"] = req.route.path
     response["method"] = req.route.method
     response["method"] = req.query
+    response["body"] = req.body
     return res.send(response);
   });
 
@@ -22,7 +23,7 @@ var routes = function(app) {
   app.post("/echo", function(req, res) {
     let response = new Object();
     response["response"] = "POST request";
-    response["body"] = req.body;
+    response["body"] = req.body
     response["headers"] = req.headers
     response["path"] = req.route.path
     response["method"] = req.route.method
